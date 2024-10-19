@@ -11,15 +11,19 @@ body {
     display: flex;
     justify-content: space-around;
     height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
     /*border: 1px solid black;*/
 }
 
 .contenedor-imagen {
     width: 45%; 
-    aspect-ratio: 1; /* Esto hace que el contenedor sea cuadrado (relación 1:1) */
+    height: 0;
+    padding-bottom: 45%;
     position: relative;
-    /*border: 1px solid black;*/ /* Para visualizar el borde */
-    overflow: hidden; /* Esconde cualquier parte que sobresalga de la imagen */
+    overflow: hidden; /* Esconde cualquier parte que sobresalga */
+    /*border-radius: 50%;*/ /* Hace que la imagen sea circular */
+    /* border: 1px solid black; */
 }
 
 .contenedor-imagen img {
@@ -30,6 +34,62 @@ body {
     height: 100%; 
     object-fit: cover; /* Hace que la imagen cubra todo el área del contenedor */
     border-radius: 50%; /* Aplica el borde redondeado para hacerla circular */
+}
+
+/* Responsive */
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .contenedor-principal {
+        flex-direction: row;
+    }
+
+    .contenedor-imagen {
+        width: 45%; 
+        padding-bottom: 45%; 
+        max-height: 45vh; 
+    }
+
+    .contenedor-derecho {
+        width: 45%; 
+    }
+}
+
+/* Pantallas medianas ( 764px - 1024px) */
+@media (max-width: 1024px) and (min-width: 764px) {
+    .contenedor-principal {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .contenedor-imagen {
+        width: 45%; 
+        padding-bottom: 45%; 
+        max-height: 45vh; 
+    }
+
+    .contenedor-derecho {
+        width: 45%; 
+    }
+}
+
+/* Pantallas con menos de 764px */
+@media (max-width: 763px) {
+    .contenedor-principal {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .contenedor-imagen {
+        width: 80%; 
+        padding-bottom: 80%; 
+        max-height: 300px;
+    }
+
+    .contenedor-derecho {
+        width: 80%; 
+        padding-top: 20px; 
+    }
 }
 
 /*====================================================================*/
@@ -68,6 +128,8 @@ body {
 .seleccion h1{
     text-align: center;
     font-size: 40px;
+    word-wrap: break-word; /* Asegura que el texto largo no se salga */
+    white-space: normal; /* Permite el ajuste de líneas */
 }
 
 .ingresar-colab{
@@ -84,6 +146,8 @@ body {
 .ingresar-colab h1{
     font-size: 40px;
     text-align: center;
+    word-wrap: break-word; /* Asegura que el texto largo no se salga */
+    white-space: normal; /* Permite el ajuste de líneas */
     /* background-color: lightgoldenrodyellow; */
 }
 
@@ -109,6 +173,7 @@ body {
     background-color: rgb(220, 220, 254);
     /*background-color: rgb(192, 192, 240);*/
 }
+
 .boton-colab button:active{
     background-color: rgb(192, 192, 240);
 }
@@ -139,9 +204,42 @@ body {
     background-color: rgb(192, 192, 240);
 }
 
+/* Pantallas pequeñas - Menos de 764px */
+@media (max-width: 763px) {
+    /* Reduce el tamaño de la fuente y ajusta los botones */
+    .seleccion h1, .ingresar-colab h1 {
+        font-size: 24px; /* Reduce el tamaño de los títulos */
+    }
+
+    .boton-colab button, .botones button {
+        height: 30px;
+        width: 100%; /* Los botones ocupan el 80% del ancho del contenedor */
+    }
+
+    /* Cambiar el layout de los botones en pantallas pequeñas */
+    .botones {
+        flex-direction: column; /* Los botones se apilan en columna */
+        gap: 10px; /* Espacio entre botones */
+    }
+
+    /* Ajusta el ancho de las tarjetas y las secciones */
+    .tarjeta-contenedor {
+        width: 90%; /* Aumenta el ancho para ocupar más espacio */
+        padding: 8px;
+    }
+
+    /* Evita que el texto largo se salga del contenedor */
+    .tarjeta-contenedor p, .seleccion h1, .ingresar-colab h1 {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+
 /* ======================= PÁGINA SECUNDARIOA ======================= */
 
 /* Menú flotante */
+/*
 .menu-flotante {
     display: flex;
     justify-content: space-between;
@@ -149,18 +247,19 @@ body {
     padding: 10px 20px;
     background-color: #333;
     color: white;
-    position: fixed; /* Fija el menú en la pantalla */
-    top: 20px; /* Da un espacio desde la parte superior */
+    position: fixed;
+    top: 20px;
     left: 0;
     right: 0;
-    margin: 0 auto; /* Centra el menú */
+    margin: 0 auto;
     width: 80%; 
     border-radius: 15px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra  */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 100000; 
 }
+*/
 
-.menu-flotante-b {
+.menu-flotante {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,12 +334,11 @@ body {
 }
 
 /* ======================= MAPA ======================= */
-
+/* 
 .rol{
     position: fixed;
     display: flex;
     margin-top: 100px;
-    /*background-color: aquamarine; */
     padding: 0;
     width: 82%;
     top: 100px; 
@@ -249,9 +347,9 @@ body {
     margin: 0 auto;
     justify-content: end;
     z-index: 100000;
-}
+} */
 
-.rol-b{
+.rol{
     position: absolute;
     display: flex;
     margin-top: 100px;
