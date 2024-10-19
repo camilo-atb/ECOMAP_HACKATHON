@@ -266,8 +266,8 @@ body {
     padding: 10px 20px;
     background-color: #333;
     color: white;
-    position: absolute; /* Fija el menú en la pantalla */
-    top: 20px; /* Da un espacio desde la parte superior */
+    position: absolute; 
+    top: 20px; /* Da un espacio superior */
     left: 0;
     right: 0;
     margin: 0 auto; /* Centra el menú */
@@ -466,7 +466,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido dentro del contenedor */
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -532,3 +532,154 @@ body {
 } 
 */
 
+/* ========================== GRAFICOS BOG =========================*/
+
+/* Estilos contenedor principal */
+.titulo-grafico-bog {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-grafico-bog h1 {
+    color: #333;
+    margin: 0;
+}
+
+/* Contenedor gráficos */
+.graficos-bog {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; /* Espacio entre los gráficos */
+    padding: 20px;
+}
+
+/* Estilos gráfico */
+.grafico-bog1, .grafico-bog2 {
+    width: 84%;
+    height: 510px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para los iframes */
+.grafico-bog1 iframe, .grafico-bog2 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .graficos-bog {
+        align-items: center; 
+    }
+    
+    .grafico-bog1, .grafico-bog2 {
+        width: 90%; 
+        max-width: none; 
+    }
+}
+
+/* ========================== GRAFICOS MED =========================*/
+
+.titulo-grafico-med {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-grafico-med h1 {
+    color: #333;
+    margin: 0;
+}
+
+/* Contenedor gráficos */
+.graficos-med {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; /* Espacio entre los gráficos */
+    padding: 20px;
+}
+
+/* Estilos gráfico */
+.grafico-med1, .grafico-med2 {
+    width: 84%;
+    height: 510px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos iframes */
+.grafico-med1 iframe, .grafico-med2 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .graficos-med {
+        align-items: center; 
+    }
+    
+    .grafico-med1, .grafico-med2 {
+        width: 90%; 
+        max-width: none; 
+    }
+}
+
+/* ========================== GRAFICOS COSTA =========================*/
+
+/* contenedor principal */
+.titulo-grafico-cos {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-grafico-cos h1 {
+    color: #333;
+    margin: 0;
+}
+
+/* Contenedor  gráficos */
+.graficos-cos {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; /* Espacio entre gráficos */
+    padding: 20px;
+}
+
+/* Estilos gráfico */
+.grafico-cos1, .grafico-cos2 {
+    width: 84%;
+    height: 510px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para los iframes */
+.grafico-cos1 iframe, .grafico-cos2 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .graficos-cos {
+        align-items: center; 
+    }
+    
+    .grafico-cos1, .grafico-cos2 {
+        width: 90%; 
+        max-width: none; 
+    }
+}
