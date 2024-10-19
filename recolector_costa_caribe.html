@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recolector</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ================================================================== -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="src/leaflet.legend.css">
+</head>
+<body>
+        <nav class="menu-flotante">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/9903/9903010.png" alt="Logo reciclaje">
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="recolector_principal.html">Bogotá</a></li>
+                    <li><a href="recolector_medellin.html">Medellín</a></li>
+                    <li><a href="recolector_costa_caribe.html">Costa Caribe</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1Ii75tXvkQQPgjG9Hdyfan8eWlzvKruOk?usp=sharing" target="_blank">Colab</a></li>
+                </ul>
+            </div>
+            <div class="regresar">
+                <a href="index.html" class="regresar-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6730/6730447.png" alt="Icono para regresar">
+                </a>
+            </div>
+        </nav>
+        <section>
+            <div class="rol">
+                <p><b>rol: recolector</b></p>
+            </div>
+            <div class="contenedor-mapa-caribe">
+                <div class="titulo-apartado-caribe">
+                    <h1>COSTA CARIBE</h1>
+                </div>
+                <div class="seleccion-ciudad">
+                    <select name="Seleccionar-Ciudad" id="seleccionar-ciudad">
+                        <option value="-1">Seleccione la ciudad o zona de su interés</option>
+                        <option value="10.983699251468533, -74.80424782082274">Barranquilla</option>
+                        <option value="10.399765327490776, -75.50213070682527">Cartagena</option>
+                        <option value="11.237410215536473, -74.1910826707882">Santa Marta</option>
+                        <option value="9.303063665262673, -75.39447357233462">Sincelejo</option>
+                        <option value="8.752962943191516, -75.87641233200266">Montería</option>
+                        <option value="10.465440587017861, -73.25315997430826">Valledupar</option>
+                        <option value="11.537737474642231, -72.90979415408297">Riohacha</option>
+                        <option value="11.00727909223379, -74.24379778041698">Ciénaga</option>
+                        <option value="9.245389979049559, -74.81815177647677">Magangué</option>
+                    </select>
+                </div>
+                <div  id ="mapa-caribe" class="caribe-mapa"></div> 
+            </div>
+        </section>
+    
+
+         <!--JAVASCRIPT-->
+
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+         <script src="main3.js"></script>
+         <script src="LAYERS/poligonos_localidades.js"></script>
+
+    
+</body>
+</html>

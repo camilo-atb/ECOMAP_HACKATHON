@@ -1,0 +1,436 @@
+
+/*PAGINA PRINCIPAL*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    /*border: 1px solid black;*/
+}
+
+.contenedor-imagen {
+    width: 45%; 
+    aspect-ratio: 1; /* Esto hace que el contenedor sea cuadrado (relación 1:1) */
+    position: relative;
+    /*border: 1px solid black;*/ /* Para visualizar el borde */
+    overflow: hidden; /* Esconde cualquier parte que sobresalga de la imagen */
+}
+
+.contenedor-imagen img {
+    position: absolute; /* Posiciona la imagen dentro del contenedor */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Hace que la imagen cubra todo el área del contenedor */
+    border-radius: 50%; /* Aplica el borde redondeado para hacerla circular */
+}
+
+/*====================================================================*/
+
+.contenedor-derecho {
+    width: 45%;
+    height: 100vh; 
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+}
+
+.tarjeta-contenedor {
+    background-color: aliceblue;
+    /*background-color: rgb(213, 208, 255);*/
+    /*background-color: rgb(240, 223, 128);*/
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+}
+
+.seleccion {
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.seleccion h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.ingresar-colab{
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: lightcoral; */
+}
+
+.ingresar-colab h1{
+    font-size: 40px;
+    text-align: center;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.boton-colab{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /*espacio entre botones*/
+}
+
+.boton-colab button{
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.boton-colab button:hover{
+    background-color: rgb(220, 220, 254);
+    /*background-color: rgb(192, 192, 240);*/
+}
+.boton-colab button:active{
+    background-color: rgb(192, 192, 240);
+}
+
+.botones {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /*espacio entre botones*/
+}
+
+.botones button{
+    height: 30px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    background-color: rgb(220, 220, 254);
+    /*background-color: rgb(192, 192, 240);*/
+}
+.botones button:active{
+    background-color: rgb(192, 192, 240);
+}
+
+/* ======================= PÁGINA SECUNDARIOA ======================= */
+
+/* Menú flotante */
+.menu-flotante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed; /* Fija el menú en la pantalla */
+    top: 20px; /* Da un espacio desde la parte superior */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Centra el menú */
+    width: 80%; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra  */
+    z-index: 100000; 
+}
+
+.menu-flotante-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: absolute; /* Fija el menú en la pantalla */
+    top: 20px; /* Da un espacio desde la parte superior */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Centra el menú */
+    width: 80%; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra  */
+    z-index: 100000; 
+}
+
+/* Estilos logo */
+.logo img {
+    max-height: 50px;
+}
+
+/* Estilos para los ítems del menú */
+
+.menu-items {
+    display: flex;             
+    justify-content: center;   
+    flex-grow: 1; /* Para ocupar el espacio disponible */
+    /* background-color: blue; */
+}
+
+.menu-items ul {
+    list-style: none; /*quitamos las viñetas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /*dejamos un espacio*/
+}
+
+.menu-items ul li {
+    font-size: 20px;
+}
+
+.menu-items ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu-items ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el ícono de "regresar" */
+.regresar {
+    margin-left: auto;
+}
+
+.regresar a {
+    display: flex;
+    align-items: center;
+}
+
+.regresar img {
+    max-height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.regresar img:hover {
+    transform: scale(1.1);
+}
+
+/* ======================= MAPA ======================= */
+
+.rol{
+    position: fixed;
+    display: flex;
+    margin-top: 100px;
+    /*background-color: aquamarine; */
+    padding: 0;
+    width: 82%;
+    top: 100px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: end;
+    z-index: 100000;
+}
+
+.rol-b{
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+    /*background-color: aquamarine; */
+    padding: 0;
+    width: 82%;
+    top: 100px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: end;
+    z-index: 100000;
+}
+
+.rol p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.titulo-apartado-bogota{
+    margin-top: 119px;
+    /*border: 1px solid black;*/ /*Ocultar*/
+    /*background-color: lightblue;*/ /*Ocultar*/
+    display: flex;
+}
+
+.titulo-apartado-bogota h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contenedor-mapa-bogotá {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 10px;
+}
+
+.bogota-mapa {
+    width: 82%; /* Mapa reducido a la mitad del tamaño */
+    aspect-ratio: 2 / 1; /* Mantiene la relación cuadrada */
+    border: 1px solid black; /*Ocultar*/
+    /*background-color: lightgreen;*/ /*Ocultar*/
+}
+
+/* SELECTOR */
+
+.seleccion-localidad{
+    /*background-color: lightblue;*/ /*ocultar*/
+    width: 82%;
+    margin-bottom: 5px;
+}
+
+#seleccionar-localidad{
+    background-color: rgb(212, 222, 253);
+}
+
+/* =========================== MAPA MEDELLIN =========================== */ 
+.titulo-apartado-medellin{
+    margin-top: 119px;
+    /*border: 1px solid black;*/ /*Ocultar*/
+    /*background-color: lightblue;*/ /*Ocultar*/
+    display: flex;
+}
+
+.titulo-apartado-medellin h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contenedor-mapa-medellin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 10px;
+}
+
+.medellin-mapa {
+    width: 82%; 
+    aspect-ratio: 2 / 1; /* Mantiene la relación rectangular, mas ancho que alto */
+    border: 1px solid black; /*Ocultar*/
+    /*background-color: lightgreen;*/ /*Ocultar*/
+}
+
+/* SELECTOR */
+
+.seleccion-comuna{
+    /*background-color: lightblue;*/ /*ocultar*/
+    width: 82%;
+    margin-bottom: 5px;
+}
+
+#seleccionar-comuna{
+    background-color: rgb(212, 222, 253);
+}
+
+/* =========================== MAPA CARIBE =========================== */ 
+.titulo-apartado-caribe{
+    margin-top: 119px;
+    /*border: 1px solid black;*/ /*Ocultar*/
+    /*background-color: lightblue;*/ /*Ocultar*/
+    display: flex;
+}
+
+.titulo-apartado-caribe h1{
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.contenedor-mapa-caribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 10px;
+}
+
+.caribe-mapa {
+    width: 82%; 
+    aspect-ratio: 2 / 1; 
+    border: 1px solid black; /*Ocultar*/
+    /*background-color: lightgreen;*/ /*Ocultar*/
+}
+
+/* SELECTOR */
+
+.seleccion-ciudad{
+    /*background-color: lightblue;*/ /*ocultar*/
+    width: 82%;
+    margin-bottom: 5px;
+}
+
+#seleccionar-ciudad{
+    background-color: rgb(212, 222, 253);
+}
+
+/* ===================== Icono Flotante ===================== */
+/* 
+.colab{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.icono-flotante {
+    position: fixed; 
+    right: 38px;
+    top: 50%; 
+    margin-top: -25px;
+    z-index: 9999; 
+}
+
+.icono-flotante img {
+    width: 60px; 
+    height: auto;
+    transition: 0.5s;
+}
+
+
+.colab:hover{
+    scale: 1.2;
+}
+
+.colab a{
+    background-color: green;
+    text-decoration: none;
+    color: black;
+}
+
+
+.colab p{
+    background-color: lightpink;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+} 
+*/
+

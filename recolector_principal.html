@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recolector</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ================================================================== -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="src/leaflet.legend.css">
+</head>
+<body>
+        <nav class="menu-flotante">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/9903/9903010.png" alt="Logo reciclaje">
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="recolector_principal.html">Bogotá</a></li>
+                    <li><a href="recolector_medellin.html">Medellín</a></li>
+                    <li><a href="recolector_costa_caribe.html">Costa Caribe</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1Ii75tXvkQQPgjG9Hdyfan8eWlzvKruOk?usp=sharing" target="_blank">Colab</a></li>
+                </ul>
+            </div>
+            <div class="regresar">
+                <a href="index.html" class="regresar-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6730/6730447.png" alt="Icono para regresar">
+                </a>
+            </div>
+        </nav>
+        <section>
+            <div class="rol">
+                <p><b>rol: recolector</b></p>
+            </div>
+            <div class="contenedor-mapa-bogotá">
+                <div class="titulo-apartado-bogota">
+                    <h1>CIUDAD DE BOGOTÁ</h1>
+                </div>
+                <div class="seleccion-localidad">
+                    <select name="Seleccionar-Localidad" id="seleccionar-localidad">
+                        <option value="-1">Seleccione la localidad de su interés</option>
+                        <option value="4.6097100, -74.0817500">La Candelaria</option>
+                        <option value="4.669281, -74.109236">Chapinero</option>
+                        <option value="4.628704, -74.077072">Santa Fe</option>
+                        <option value="4.602427, -74.121110">San Cristóbal</option>
+                        <option value="4.734680, -74.031377">Usaquén</option>
+                        <option value="4.704021, -74.111516">Suba</option>
+                        <option value="4.698979189211487, -74.10782503012102">Engativá</option>
+                        <option value="4.705876020880549, -74.10960865778547">Bosa</option>
+                        <option value="4.681412396672087, -74.13697273772566">Fontibón</option>
+                        <option value="4.631367891436416, -74.14899901168462">Kennedy</option>
+                        <option value="4.6407539709827645, -74.08121358015231">Teusaquillo</option>
+                        <option value="4.574216969035307, -74.11192488865305">Rafael Uribe Uribe</option>
+                        <option value="4.575330886754449, -74.13583860025014">Tunjuelito</option>
+                        <option value="4.540250292133254, -74.1546750173572">Ciudad Bolívar</option>
+                        <option value="4.505678011225891, -74.09555100918536">Usme</option>
+                        <option value="4.672153426858431, -74.07225340893591">Barrios Unidos</option>
+                        <option value="4.610487164560192, -74.08816472666646">Los Mártires</option>
+                        <option value="4.591156872711774, -74.10163570705829">Antonio Nariño</option>
+                    </select>
+                </div>
+                <div  id ="mapa-bogotá" class="bogota-mapa"></div> 
+            </div>
+        </section>
+    
+
+         <!--JAVASCRIPT-->
+
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+         <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recolector</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ================================================================== -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="src/leaflet.legend.css">
+</head>
+<body>
+        <nav class="menu-flotante">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/9903/9903010.png" alt="Logo reciclaje">
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="denunciante_principal.html">Bogotá</a></li>
+                    <li><a href="denunciante_medellin.html">Medellín</a></li>
+                    <li><a href="denunciante_costa_caribe.html">Costa Caribe</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1Ii75tXvkQQPgjG9Hdyfan8eWlzvKruOk?usp=sharing" target="_blank">Colab</a></li>
+                </ul>
+            </div>
+            <div class="regresar">
+                <a href="index.html" class="regresar-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6730/6730447.png" alt="Icono para regresar">
+                </a>
+            </div>
+        </nav>
+        <section>
+            <div class="rol">
+                <p><b>rol: denunciante</b></p>
+            </div>
+            <div class="contenedor-mapa-medellin">
+                <div class="titulo-apartado-medellin">
+                    <h1>CIUDAD DE MEDELLÍN</h1>
+                </div>
+                <div class="seleccion-comuna">
+                    <select name="Seleccionar-Comuna" id="seleccionar-comuna">
+                        <option value="-1">Seleccione la comuna de su interés</option>
+                        <option value="6.304179013740378, -75.54637355960402">Popular</option>
+                        <option value="6.29347467947491, -75.55852373153326">Santa Cruz</option>
+                        <option value="6.264408636784951, -75.54913212670888">Manrique</option>
+                        <option value="6.283068465667044, -75.56747985128371">Aranjuez</option>
+                        <option value="6.292766762663781, -75.57261803483843">Castilla</option>
+                        <option value="6.302092585002888, -75.58137242724396">Doce de Octubre</option>
+                        <option value="6.25549279103464, -75.62089759998126">San Javier</option>
+                        <option value="5.995693494526586, -75.17987062119222">Villa Hermosa</option>
+                        <option value="6.237665959073794, -75.55545424604489">Buenos Aires</option>
+                        <option value="6.249787323204089, -75.56865174347172">La Candelaria</option>
+                        <option value="6.252691061534762, -75.58853332067405">Laureles-Estadio</option>
+                        <option value="6.255737360745617, -75.60256534272655">La América</option>
+                        <option value="6.343640211385227, -75.69076772021954">San Sebastián de Palmitas</option>
+                        <option value="6.209427036374917, -75.5681066078947">El Poblado</option>
+                        <option value="6.212705693701372, -75.58591737496162">Guayabal</option>
+                        <option value="6.232238799662463, -75.5916642920507">Belén</option>
+                    </select>
+                </div>
+                <div  id ="mapa-medellin" class="medellin-mapa"></div>
+            </div>
+        </section>
+    
+
+         <!--JAVASCRIPT-->
+
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+         <script src="main2.js"></script>
+    
+</body>
+</html>
