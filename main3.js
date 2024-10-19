@@ -182,3 +182,8 @@ mapa_caribe.on("click", function (e) {
 
 // Cargamos las ubicaciones almacenadas cuando se carga la página
 cargarUbicacionesDesdeLocalStorage();
+
+
+function obtenerCantidadUbicacionesCosta() {
+  return ubicaciones.length;
+}

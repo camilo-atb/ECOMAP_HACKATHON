@@ -156,4 +156,32 @@ mapa.on("click", function (e) {
 cargarUbicacionesDesdeLocalStorage();
 
 
+/*
+let cantidad_ubicaciones = lugares.length;
+console.log(cantidad_ubicaciones);
+
+if (cantidad_ubicaciones === 1) {
+  alert(`Hay ${cantidad_ubicaciones} solicitud pendiente en la ciudad de Bogotá`);
+} else {
+  alert(`Hay ${cantidad_ubicaciones} solicitudes pendientes en la ciudad de Bogotá`);
+}
+  */
+ /*
+let cantidad_ubicaciones = lugares.length;
+
+// Verificamos si estamos en la página del recolector
+if (window.location.pathname.includes("recolector_principal.html")) { // "window.location.pathname" Para trabajar en la ruta del archivo indicado
+  if (cantidad_ubicaciones === 1) {
+    alert(`Hay ${cantidad_ubicaciones} solicitud pendiente en la ciudad de Bogotá`);
+  } else if (cantidad_ubicaciones > 1) {
+    alert(`Hay ${cantidad_ubicaciones} solicitudes pendientes en la ciudad de Bogotá`);
+  }
+}
+*/
+function obtenerCantidadUbicaciones() {
+  return lugares.length;
+}
+
+
+
 

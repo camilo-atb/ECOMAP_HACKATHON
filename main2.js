@@ -147,3 +147,8 @@ mapa_medellin.on("click", function (e) {
 });
 
 cargarUbicacionesDesdeLocalStorage();
+
+
+function obtenerCantidadUbicacionesMedellin() {
+  return ubicaciones.length;
+}
