@@ -154,3 +154,6 @@ mapa.on("click", function (e) {
 
 // Cargar las ubicaciones almacenadas cuando se carga la página
 cargarUbicacionesDesdeLocalStorage();
+
+
+
