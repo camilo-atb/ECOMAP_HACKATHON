@@ -183,5 +183,158 @@ function obtenerCantidadUbicaciones() {
 }
 
 
+/* ==================================== UBICACIONES CENTROS DE ACOPIO ==================================== */ 
+
+let ads_pharma = L.marker([4.696003917845852, -74.07444980699995]).addTo(mapa); 
+
+ads_pharma.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Laboratorio ADS PHARMA S.A.S.</b><br>
+        Material: Textiles<br>
+        Dirección: Calle 102 A No. 70-79
+    </div>
+`); 
+
+let discolpartes = L.marker([4.749258266844163, -74.02832257499995]).addTo(mapa); 
+
+discolpartes.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de Acopio DISCOLPARTES S.A.S.</b><br>
+        Material: Cuero<br>
+        Dirección: Avenida Carrera 68 No. 68B - 91
+    </div>
+`); 
+
+let pilas_y_baterias = L.marker([4.666659999846803, -74.07222999999993]).addTo(mapa); 
+
+pilas_y_baterias.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de Acopio PILAS Y BATERIAS S.A.</b><br>
+        Material: Textiles<br>
+        Dirección: Calle 72 No. 29A-33
+    </div>
+`); 
+
+let drogueria_pharma_world = L.marker([4.719133834845102, -74.09055954199994]).addTo(mapa); 
+
+drogueria_pharma_world.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Droguería Universitaria Pharma World</b><br>
+        Material: Textiles<br>
+        Dirección: Carrera 91 No. 136-06
+    </div>
+`); 
+
+let ford_motor = L.marker([4.713286018845327, -74.05120603499995]).addTo(mapa); 
+
+ford_motor.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de Acopio FORD MOTOR COLOMBIA S A S</b><br>
+        Material: Plástico<br>
+        Dirección: Calle 128 B No 32 - 51
+    </div>
+`); 
+
+let unicentro_occidente = L.marker([4.723313583844968, -74.11446735899995]).addTo(mapa); 
+
+unicentro_occidente.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Centro Comercial Unicentro De Occidente</b><br>
+        Material: Cuero<br>
+        Dirección: Carrera 111C No. 86-05
+    </div>
+`); 
+
+let gmovil_patio_verbenal = L.marker([4.714323279845264, -74.13925541299994]).addTo(mapa); 
+
+gmovil_patio_verbenal.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Gmovil Patio Verbenal</b><br>
+        Material: Juguetes<br>
+        Dirección: Carrera 121 No.65A-90
+    </div>
+`); 
+
+let exito_americas = L.marker([4.628123307848085, -74.10588676899994]).addTo(mapa); 
+
+exito_americas.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Éxito De Las Américas</b><br>
+        Material: Cuero<br>
+        Dirección: Avenida Américas No. 68 A-94
+    </div>
+`); 
+
+let audifarma_san_lucas = L.marker([4.623487714848242, -74.14880399299994]).addTo(mapa); 
+
+audifarma_san_lucas.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Audifarma San Lucas</b><br>
+        Material: Juguetes<br>
+        Dirección: Calle 35 Sur No. 78-58
+    </div>
+`); 
+
+let milenio_plaza = L.marker([4.623487714848242, -74.14880399299994]).addTo(mapa); 
+
+milenio_plaza.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Centro Comercial Milenio Plaza</b><br>
+        Material: Cuero<br>
+        Dirección: Avenida Ciudad de Cali No. 42B-51 sur
+    </div>
+`);
+
+let drogueria_unisanar = L.marker([4.606493364848799, -74.18513451399997]).addTo(mapa); 
+
+drogueria_unisanar.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Droguería Unisanar</b><br>
+        Material: Juguetes<br>
+        Dirección: Calle 65 Sur No. 80-05
+    </div>
+`);
+
+let cc_centro_mayor = L.marker([4.59174913584924, -74.12403303899998]).addTo(mapa); 
+
+cc_centro_mayor.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Centro Comercial Centro Mayor</b><br>
+        Material: Cuero<br>
+        Dirección: Calle 38 a sur No. 34d-51 
+    </div>
+`);
+
+let la_rebaja = L.marker([4.498389999852279, -74.10037999999997]).addTo(mapa); 
+
+la_rebaja.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Droguería La Rebaja No. 3 Santa Librada</b><br>
+        Material: Cuero<br>
+        Dirección: Avenida Usme Carrera 1 No. 76 A-22 Sur
+    </div>
+`);
+
+let dispensario_medipol = L.marker([4.5045699998521105, -74.24967999999996]).addTo(mapa); 
+
+dispensario_medipol.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Dispensario Medipol Sibaté</b><br>
+        Material: Juguetes<br>
+        Dirección: Kilómetro 20 Vía Sibate Escuela Gonzalo Jimenez de Quesada
+    </div>
+`);
+
+let green_movil = L.marker([4.7004599978457176,  -74.16205247899995]).addTo(mapa); 
+
+green_movil.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Green Móvil</b><br>
+        Material: Textiles<br>
+        Dirección:Transversal 133 No 22B-99
+    </div>
+`);
+
+
 
 

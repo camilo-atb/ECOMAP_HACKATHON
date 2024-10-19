@@ -187,3 +187,37 @@ cargarUbicacionesDesdeLocalStorage();
 function obtenerCantidadUbicacionesCosta() {
   return ubicaciones.length;
 }
+
+
+/* ==================================== UBICACIONES CENTROS DE ACOPIO ==================================== */ 
+
+let cc_nao_fund_and_shopping = L.marker([10.413046416664164, -75.55127890999995]).addTo(mapa_caribe); 
+
+cc_nao_fund_and_shopping.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Centro Comercial Nao Fun And Shopping</b><br>
+        Material: Juguetes<br>
+        Dirección: Bocagrande Carrera 1 Carrera 2 Esquina
+    </div>
+`); 
+
+let baterias_ranger = L.marker([10.918720746648663, -74.77377679899996]).addTo(mapa_caribe); 
+
+baterias_ranger.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio BATERIAS RANGER</b><br>
+        Material: Cuero<br>
+        Dirección: Calle 30 No 19 – 04
+    </div>
+`); 
+
+let autonorte = L.marker([11.236354493638963, -74.17898677399995]).addTo(mapa_caribe); 
+
+autonorte.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio Autonorte</b><br>
+        Material: Textiles<br>
+        Dirección: Av. El Libertador 20 - 80
+    </div>
+`); 
+

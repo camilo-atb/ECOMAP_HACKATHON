@@ -152,3 +152,106 @@ cargarUbicacionesDesdeLocalStorage();
 function obtenerCantidadUbicacionesMedellin() {
   return ubicaciones.length;
 }
+
+/* ==================================== UBICACIONES CENTROS DE ACOPIO ==================================== */ 
+
+let drogueria_colsubsidio = L.marker([6.273501983794822, -75.57522454099995]).addTo(mapa_medellin); 
+
+drogueria_colsubsidio.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Droguería Colsubsidio SF Multicentro Caribe</b><br>
+        Material: Juguetes<br>
+        Dirección: Transversal 78 No. 65-165 Local. 165
+    </div>
+`); 
+
+let olímpica_mazuren = L.marker([6.238301343795926, -75.57368076199998]).addTo(mapa_medellin); 
+
+olímpica_mazuren.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio ENERGÍA & POTENCIA S.A.S.</b><br>
+        Material: Textiles<br>
+        Dirección: Carrera52 No.36-80
+    </div>
+`); 
+
+let euro_life = L.marker([6.230801006796159, -75.56958142499997]).addTo(mapa_medellin); 
+
+euro_life.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio EURO LIFE S.A.S</b><br>
+        Material: Plástico<br>
+        Dirección: Carrera43A No.30-84
+    </div>
+`); 
+
+let fabrica_italo = L.marker([6.218397857796587, -75.58056959099997]).addTo(mapa_medellin); 
+
+fabrica_italo.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio FABRICA ITALO COLOMBIANA DE BATERIAS FAICO S.A.S</b><br>
+        Material: Juguetes<br>
+        Dirección: Carrera52 No.14-14
+    </div>
+`); 
+
+let energia_y_potencia = L.marker([6.209047998796894, -75.58544501499995]).addTo(mapa_medellin); 
+
+energia_y_potencia.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio ENERGÍA Y POTENCIA S.A.</b><br>
+        Material: Cuero<br>
+        Dirección: Carrera52 No.1-185
+    </div>
+`); 
+
+let Vehicaminos = L.marker([6.217672180796624, -75.57308757499999]).addTo(mapa_medellin); 
+
+Vehicaminos.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de acopio Vehicaminos Autoland</b><br>
+        Material: Juguetes<br>
+        Dirección: Calle 17 No 43 F - 89. El Poblado
+    </div>
+`); 
+
+let clinica_clofan = L.marker([6.207061250796924, -75.57675908499994]).addTo(mapa_medellin); 
+
+clinica_clofan.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Clínica Clofan</b><br>
+        Material: Plástico<br>
+        Dirección: Carrera 48 No. 29A-40
+    </div>
+`); 
+
+let Laboratorios_farmanal = L.marker([6.18136781079775, -75.59428767099996]).addTo(mapa_medellin); 
+
+Laboratorios_farmanal.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de Acopio LABORATORIOS FARMANAL LTDA</b><br>
+        Material: Plástico<br>
+        Dirección: Calle 73A No.45-71
+    </div>
+`); 
+
+let cristian_perdomo = L.marker([6.18136781079775, -75.59428767099996]).addTo(mapa_medellin); 
+
+cristian_perdomo.bindPopup(`
+    <div style="text-align: center;">
+        <b>Centro de Almacenamiento CHRISTIAN FELIPE PERDOMO MAYOR</b><br>
+        Material: Plástico<br>
+        Dirección: Calle 79B Sur No.54-65
+    </div>
+`); 
+
+let parque_de_las_aguas = L.marker([6.443356141789322, -75.32943501699998]).addTo(mapa_medellin); 
+
+parque_de_las_aguas.bindPopup(`
+    <div style="text-align: center;">
+        <b>Punto de Recolección Parque Metropolitano de las Aguas</b><br>
+        Material: Juguetes<br>
+        Dirección: Kilómetro 23 Autopista Norte Barbosa – Antioquia
+    </div>
+`); 
+
